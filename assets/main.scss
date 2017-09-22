@@ -91,3 +91,10 @@ h1.title {
   color: #fff;
   padding:25px;
 }
+
+@media all and (max-width: 480px) {
+  .hero {
+    min-height: 480px;
+  }
+
+}
