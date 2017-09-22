@@ -1,6 +1,3 @@
 $(document).ready(function(){
-    $('.hero').css('height', $(window).height() - 135);
+    $('.hero').css('height', $(window).height() - 150);
 });
-// $(window).resize(function(){
-//     $('.slide').css('height', $(window).height());
-// });
