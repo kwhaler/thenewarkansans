@@ -17,7 +17,7 @@ title: The New Arkansans Music
 email: your-email@example.com
 description: "Ⓒ 2017 The New Arkansans"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kwhaler.github.io/thenewarkansans/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
