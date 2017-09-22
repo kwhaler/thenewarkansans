@@ -1,0 +1,27 @@
+.apdiv {
+  background: rgba(255,255,255,0.8)
+}
+nav ul li a {
+  color: #222;
+  font: 14px "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","Osaka","ＭＳ Ｐゴシック","MS PGothic", sans-serif;
+  text-transform: uppercase;
+}
+nav ul li a.current {
+  font-weight: bold;
+}
+#socialIcons a {
+  color: #222;
+}
+#stacks_in_1_page0, #stacks_in_1_page2, #stacks_in_1_page5 {
+  background: rgba(255,255,255,0.8);
+  font: 14px "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","Osaka","ＭＳ Ｐゴシック","MS PGothic", sans-serif;
+  padding: 14px;
+}
+#stacks_in_1_page0 a, #stacks_in_1_page2 a, #stacks_in_1_page5 a {
+  text-decoration: underline;
+  color: #000;
+}
+footer {
+  font: 14px "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","Osaka","ＭＳ Ｐゴシック","MS PGothic", sans-serif;
+  color: #fff;
+}

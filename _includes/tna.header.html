@@ -1,0 +1,37 @@
+{% assign default_paths = site.pages | map: "path" %}
+{% assign page_paths = site.header_pages | default: default_paths %}
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  {% if page_paths %}
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ "/" | relative_url }}"><img src="{{ site.baseurl }}/assets/tna-music-icon.png" alt="TNA Music"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        {% for path in page_paths %}
+        {% assign my_page = site.pages | where: "path", path | first %}
+        {% if my_page.title %}
+        <li>
+          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.instagram.com/thenewarkansans/"><i class="fa fa-instagram fa-lg"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCDaw7W3DK8H0YefLpBH4Ypw"><i class="fa fa-youtube-play fa-lg"></i></a></li>
+        <li><a href="https://soundcloud.com/user-654163957"><i class="fa fa-soundcloud fa-lg"></i></a></li>
+        <li><a href="https://www.facebook.com/TheNewArkansans/"><i class="fa fa-facebook fa-lg"></i></a></li>
+        <li><a href="https://twitter.com/TheNewArkansans?lang=en"><i class="fa fa-twitter fa-lg"></i></a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+  {% endif %}
+</nav>

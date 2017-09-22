@@ -1,0 +1,83 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* path to glyphicons */
+$icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+$font-size-base:16px;
+
+$body-bg:#8F383A;
+
+/* any style customization must be before the bootstrap import */
+@import "bootstrap";
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: #52363C url('{{ site.baseurl }}/assets/banner_1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Rambla', sans-serif;
+  min-height: 1600px;
+  padding-top: 70px;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar-default {
+  background-color: rgba(255,255,255,0.7);
+  .navbar-nav > li > a {
+    color: #222;
+  }
+  .navbar-brand {
+    img {
+      max-width: 25px;
+    }
+
+  }
+}
+
+.hero {
+  // min-height: 800px;
+  position: relative;
+  img {
+    position: absolute;
+    top: 50%;
+    margin-top: -90px;
+  }
+}
+
+h1.title {
+  color: #fff;
+  font-size: 36px;
+}
+
+.section {
+  background-color: rgba(255,255,255,0.7);
+  padding-top:25px;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  color: #fff;
+}
