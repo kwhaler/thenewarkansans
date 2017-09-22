@@ -43,6 +43,10 @@ img {
   .navbar-nav > li > a {
     color: #222;
     text-transform: uppercase;
+
+  }
+  & .current {
+    font-weight: bold;
   }
   .navbar-brand {
     img {

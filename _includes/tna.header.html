@@ -1,5 +1,6 @@
 {% assign default_paths = site.pages | map: "path" %}
 {% assign page_paths = site.header_pages | default: default_paths %}
+{% assign current = page.url | downcase | split: '/' %}
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
   {% if page_paths %}
@@ -16,16 +17,16 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-          <a class="page-link" href="{{ site.baseurl }}/tour">Tour</a>
+          <a class="page-link {% if current[1] == 'tour' %}current{% endif %}" href="{{ site.baseurl }}/tour">Tour</a>
         </li>
         <li>
-          <a class="page-link" href="{{ site.baseurl }}/pics">Pics</a>
+          <a class="page-link {% if current[1] == 'pics' %}current{% endif %}" href="{{ site.baseurl }}/pics">Pics</a>
         </li>
         <li>
-          <a class="page-link" href="{{ site.baseurl }}/videos">Videos</a>
+          <a class="page-link {% if current[1] == 'videos' %}current{% endif %}" href="{{ site.baseurl }}/videos">Videos</a>
         </li>
         <li>
-          <a class="page-link" href="{{ site.baseurl }}/contact">Contact</a>
+          <a class="page-link {% if current[1] == 'contact' %}current{% endif %}" href="{{ site.baseurl }}/contact">Contact</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
