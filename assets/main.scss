@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background: #52363C url('{{ site.baseurl }}/assets/banner_1.jpg') no-repeat center center fixed;
+  background: #52363C url('/{{ site.baseurl }}/assets/banner_1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
