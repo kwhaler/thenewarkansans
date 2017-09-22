@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background: #52363C url('{{ site.baseurl }}/assets/banner_1.jpg') no-repeat center center fixed;
+  background: #262022 url('{{ site.baseurl }}/assets/banner_1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -42,6 +42,7 @@ img {
   background-color: rgba(255,255,255,0.7);
   .navbar-nav > li > a {
     color: #222;
+    text-transform: uppercase;
   }
   .navbar-brand {
     img {
@@ -71,6 +72,10 @@ h1.title {
   padding-top:25px;
   font-size: 18px;
   line-height: 1.75;
+  min-height: 480px;
+  h1.title {
+    color: #222;
+  }
 }
 
 .footer {
@@ -80,4 +85,5 @@ h1.title {
   /* Set the fixed height of the footer here */
   height: 60px;
   color: #fff;
+  padding:25px;
 }
