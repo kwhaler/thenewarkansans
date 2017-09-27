@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $('.hero').css('height', $(window).height() - 150);
+    $('.hero').css('height', $(window).height() - 55);
 });

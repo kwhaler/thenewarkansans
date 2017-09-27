@@ -3,12 +3,16 @@
 ---
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css?family=Katibeh');
+
 /* path to glyphicons */
 $icon-font-path: "{{ site.baseurl }}/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
 $font-size-base:16px;
-
-$body-bg:#8F383A;
+$body-bg: #8F383A;
+$display_font: 'Katibeh', cursive;
+// $brand_red: #BF4646;
+$brand_red: #AA1917;
+$brand_blk: #231E20;
 
 /* any style customization must be before the bootstrap import */
 @import "bootstrap";
@@ -27,11 +31,12 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Rambla', sans-serif;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
   min-height: 1600px;
   padding-top: 70px;
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  color: $brand_blk;
 }
 
 img {
@@ -39,20 +44,36 @@ img {
 }
 
 .navbar-default {
+  border-bottom: none;
   background-color: rgba(255,255,255,0.7);
+
+  -webkit-transition: background .25s ease-out;
+   -moz-transition: background .25s ease-out;
+   -o-transition: background .25s ease-out;
+   transition: background .25s ease-out;
+
   .navbar-nav > li > a {
     color: #222;
     text-transform: uppercase;
-
-  }
-  & .current {
-    font-weight: bold;
-  }
-  .navbar-brand {
-    img {
-      max-width: 25px;
+    &:hover {
+      color: $brand_red;
     }
 
+  }
+  &.current {
+    font-weight: bold;
+  }
+  &:hover {
+    background-color: rgba(255,255,255,0.85);
+  }
+  .navbar-brand {
+    font-family: $display_font;
+    color: darken($brand_red, 20%);
+    font-size: 46px;
+    line-height: 1;
+    &:hover {
+      color: $brand_red;
+    }
   }
 }
 
@@ -66,10 +87,7 @@ img {
   }
 }
 
-h1.title {
-  color: #fff;
-  font-size: 36px;
-}
+
 
 .section {
   background-color: rgba(255,255,255,0.7);
@@ -78,8 +96,43 @@ h1.title {
   font-size: 18px;
   line-height: 1.75;
   min-height: 480px;
+  position: relative;
   h1.title {
-    color: #222;
+    font-family: $display_font;
+    font-weight: 200;
+    color: #fff;
+    font-size: 58px;
+    line-height: 1;
+    background: rgba(0,0,0,0.75);
+    padding: 15px 15px 0 15px;
+    overflow: hidden;
+    position: absolute;
+    top: -95px;
+    left:0;
+
+  }
+}
+
+.title {
+  font-family: $display_font;
+  font-size: 46px;
+  color: $brand_red;
+}
+
+#gallery, #videos {
+  position: relative;
+  h1.title {
+    font-family: $display_font;
+    color: #fff;
+    font-size: 58px;
+    line-height: 1;
+    background: rgba(0,0,0,0.75);
+    padding: 15px 15px 0 15px;
+    overflow: hidden;
+    position: absolute;
+    top: -95px;
+    left:0;
+
   }
 }
 
