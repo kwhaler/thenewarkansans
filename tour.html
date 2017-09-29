@@ -9,25 +9,42 @@ title: Tour
       <h1 class="title">2017 {{ page.title }}</h1>
       <h2 class="title">Nov</h2>
       <ul class="list-unstyled">
-        {% for show in site.data.tna_shows_2017-nov %}
+        {% for show in site.data.tna_shows-nov17 %}
         <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
         {% endfor %}
       </ul>
       <h2 class="title">Oct</h2>
       <ul class="list-unstyled">
-        {% for show in site.data.tna_shows_2017-oct %}
+        {% for show in site.data.tna_shows-oct17 %}
         <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
         {% endfor %}
       </ul>
       <h2 class="title">Sept</h2>
       <ul class="list-unstyled">
-        {% for show in site.data.tna_shows_2017-sep %}
+        {% for show in site.data.tna_shows-sep17 %}
+        <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
+        {% endfor %}
+      </ul>
+      <!-- <h2 class="title">Aug</h2>
+      <ul class="list-unstyled">
+        {% for show in site.data.tna_shows-aug17 %}
+        <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
+        {% endfor %}
+      </ul> -->
+    </div>
+  </div>
+  <div class="row" style="margin-top: 100px;">
+    <div class="col-md-8 section shows">
+      <h1 class="title">2016 {{ page.title }}</h1>
+      <h2 class="title">Sept</h2>
+      <ul class="list-unstyled">
+        {% for show in site.data.tna_shows-sep16 %}
         <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
         {% endfor %}
       </ul>
       <h2 class="title">Aug</h2>
       <ul class="list-unstyled">
-        {% for show in site.data.tna_shows_2017-aug %}
+        {% for show in site.data.tna_shows-aug16 %}
         <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
         {% endfor %}
       </ul>
