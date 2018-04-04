@@ -6,10 +6,39 @@ title: Tour
 <div id="shows">
   <div class="row">
     <div class="col-md-8 section shows">
-      <h1 class="title">2017 {{ page.title }}</h1>
-      <h2 class="title">Nov</h2>
+      <h1 class="title">2018 {{ page.title }}</h1>
+      <h2 class="title">Mar</h2>
       <ul class="list-unstyled">
-        {% for show in site.data.tna_shows-nov17 %}
+        {% for show in site.data.tna_shows-mar18 %}
+        <li><strong>{{ show.date }}</strong>{{ show.addr | prepend: " / " | append: ", " }}{{ show.city | append: ", "}}{{ show.state | append: " " }}{{ show.country }}</li>
+        {% endfor %}
+      </ul>
+      <h2 class="title">Apr</h2>
+      <ul class="list-unstyled">
+        {% for show in site.data.tna_shows-apr18 %}
+        <li><strong>{{ show.date }}</strong>{{ show.addr | prepend: " / " | append: ", " }}{{ show.city | append: ", "}}{{ show.state | append: " " }}{{ show.country }}</li>
+        {% endfor %}
+      </ul>
+      <h2 class="title">May</h2>
+      <ul class="list-unstyled">
+        {% for show in site.data.tna_shows-may18 %}
+        <li><strong>{{ show.date }}</strong>{{ show.addr | prepend: " / " | append: ", " }}{{ show.city | append: ", "}}{{ show.state | append: " " }}{{ show.country }}</li>
+        {% endfor %}
+      </ul>
+      <h2 class="title">Jun</h2>
+      <ul class="list-unstyled">
+        {% for show in site.data.tna_shows-jun18 %}
+        <li><strong>{{ show.date }}</strong>{{ show.addr | prepend: " / " | append: ", " }}{{ show.city | append: ", "}}{{ show.state | append: ", " }}{{ show.country }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="row"  style="margin-top: 250px;">
+    <div class="col-md-8 section shows">
+      <h1 class="title">2017 {{ page.title }}</h1>
+      <h2 class="title">Sept</h2>
+      <ul class="list-unstyled">
+        {% for show in site.data.tna_shows-sep17 %}
         <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
         {% endfor %}
       </ul>
@@ -19,32 +48,26 @@ title: Tour
         <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
         {% endfor %}
       </ul>
-      <h2 class="title">Sept</h2>
+      <h2 class="title">Nov</h2>
       <ul class="list-unstyled">
-        {% for show in site.data.tna_shows-sep17 %}
+        {% for show in site.data.tna_shows-nov17 %}
         <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
         {% endfor %}
       </ul>
-      <!-- <h2 class="title">Aug</h2>
-      <ul class="list-unstyled">
-        {% for show in site.data.tna_shows-aug17 %}
-        <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
-        {% endfor %}
-      </ul> -->
     </div>
   </div>
   <div class="row" style="margin-top: 250px;">
     <div class="col-md-8 section shows">
       <h1 class="title">2016 {{ page.title }}</h1>
-      <h2 class="title">Sept</h2>
-      <ul class="list-unstyled">
-        {% for show in site.data.tna_shows-sep16 %}
-        <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
-        {% endfor %}
-      </ul>
       <h2 class="title">Aug</h2>
       <ul class="list-unstyled">
         {% for show in site.data.tna_shows-aug16 %}
+        <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
+        {% endfor %}
+      </ul>
+      <h2 class="title">SepT</h2>
+      <ul class="list-unstyled">
+        {% for show in site.data.tna_shows-sep16 %}
         <li><strong>{{ show.date }}</strong> / {{ show.addr }}, {{ show.city }}, {{ show.state }}</li>
         {% endfor %}
       </ul>
